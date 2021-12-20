@@ -2,6 +2,7 @@
 
 .item {
     background-color: crimson;
+    border: 2px solid hsl(355, 52%, 38%);
     color: white;
     display: flex;
     align-items: center;
@@ -33,7 +34,7 @@ div {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto repeat(5, 50px);
-    grid-gap: 16px;
+    grid-gap: 16px 16px;
     grid-template-areas:
        "a"
        "b"
@@ -44,12 +45,12 @@ div {
        "f";
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 576px) {
 div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 174px 100px auto 50px;
-    grid-gap: 16px;
+    grid-gap: 16px 16px;
     grid-template-areas:
        "a c c"
        "b c c"
